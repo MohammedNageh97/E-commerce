@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - MyStore</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <h1><img src="./images/Glossy MyStore Shopping Logo.png" alt="logo" /></h1>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="cart.html" id="cart-count"
+          >Cart <span id="cart-number">0</span></a
+        >
+        <button id="theme-toggle">🌙</button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="checkout-section">
+        <h2>Customer Information</h2>
+        <form id="checkout-form">
+          <label for="full-name"
+            >Full Name
+            <input required
+              type="text"
+              id="full-name"
+              placeholder="Enter your full name"
+            />
+          </label>
+
+          <label for="email"
+            >Email Address
+            <input required
+              type="email"
+              id="email"
+              placeholder="Enter your email address"
+            />
+          </label>
+
+          <label for="phone"
+            >phone
+            <input required
+              type="tel"
+              id="phone"
+              placeholder="Enter your phone number"
+            />
+          </label>
+          
+          <label for="address">Shipping Address
+              <textarea id="address" placeholder="Enter your shipping address" required>
+            </textarea>
+        </label>
+        
+        <h3>Payment Method</h3>
+        <label for="cash" class="payment-option"
+          >Cash on Delivery
+          <input required name="payment" value="cash"
+            type="radio"
+            id="cash"
+            
+          />
+        </label>
+
+        <label for="card" class="payment-option"
+          >Credit / Debit Card
+          <input required name="payment" value="card"
+            type="radio"
+            id="card"
+            
+          />
+        </label>
+
+        <button type="submit">Place Order</button>
+
+        </form>
+      </section>
+
+      <section class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="checkout-items">
+        </div>
+        <p id="checkout-total-items"></p>
+        <h3 id="checkout-total-price"></h3>
+      </section>
+    </main>
+  </body>
+</html>

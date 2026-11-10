@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyStore</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><img src="./images/Glossy MyStore Shopping Logo.png" alt="logo" /></h1>
+        <ul>
+          <li><a href="#" class="Home">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="cart.html" id="cart-count" >Cart <span id="cart-number">0</span></a>
+          <button id="theme-toggle">🌙</button>
+        </div>
+        
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Discover Your Style</h2>
+        <p>Find the best products at the best prices.</p>
+        <a href="#products" class="shop-btn">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="search-section">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search for products..."
+      />
+      <button id="search-btn">Search</button>
+    </section>
+
+    <section class="categories">
+      <h2>Shop By Category</h2>
+
+      <div class="category-buttons">
+        <button class="category-btn active" data-category="all">
+          All Products
+        </button>
+
+        <button class="category-btn" data-category="electronics">
+          Electronics
+        </button>
+
+        <button class="category-btn" data-category="clothes">Clothes</button>
+
+        <button class="category-btn" data-category="shoes">Shoes</button>
+
+        <button class="category-btn" data-category="accessories">
+          Accessories
+        </button>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h2>Featured Products</h2>
+      <div class="products-container">
+        <div class="product-card" data-category="electronics"  data-name="Headphones" data-price="50">
+            <img src="./images/headphone.avif" alt="Wireless Headphones" />
+            <h3>Headphones</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="electronics" data-name="Laptop MacBook Air" data-price="1446">
+            <img src="./images/MacBook Air 15-inch (M5 Chip).webp" alt="Laptop MacBook Air" />
+            <h3>Laptop MacBook Air</h3>
+            <p>$1446</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="electronics" data-name="samsung-galaxy-s25-ultra" data-price="1300">
+            <img
+              src="./images/samsung-galaxy-s25-ultra.jpg"
+              alt="samsung-galaxy-s25-ultra"
+            />
+            <h3>samsung-galaxy-s25-ultra</h3>
+            <p>$1300</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="Watch" data-price="50">
+            <img src="./images/watch.jpg" alt="watch" />
+            <h3>Watch</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="Bluetooth-Smart-Sunglasses" data-price="50">
+            <img
+              src="./images/Bluetooth-Smart-Sunglasses.avif"
+              alt="Bluetooth-Smart-Sunglasses"
+            />
+            <h3>Bluetooth-Smart-Sunglasses</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="Breguet" data-price="50">
+            <img src="./images/Breguet.jpg" alt="Breguet" />
+            <h3>Breguet</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="casio" data-price="50">
+            <img src="./images/casio.webp" alt="casio" />
+            <h3>casio</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="Formex Essence 39" data-price="50">
+            <img
+              src="./images/Formex Essence 39.webp"
+              alt="Formex Essence 39"
+            />
+            <h3>Formex Essence 39</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="fossil" data-price="50">
+            <img src="./images/fossil.webp" alt="fossil" />
+            <h3>fossil</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="Jaxen Silver Green" data-price="50">
+            <img
+              src="./images/JaxenSilverGreenGradientRectangleSunglasses.webp"
+              alt="JaxenSilverGreenGradientRectangleSunglasses"
+            />
+            <h3>Jaxen Silver Green</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="clothes" data-name="Grey T-Shirt" data-price="50">
+            <img src="./images/Grey_Tshirt.jpg" alt="Grey_Tshirt" />
+            <h3>Grey T-Shirt</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="clothes" data-name="Jeans" data-price="50">
+            <img src="./images/jeans.jpg" alt="jeans" />
+            <h3>Jeans</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="clothes" data-name="hoodie" data-price="50">
+            <img src="./images/hoodie.avif" alt="hoodie" />
+            <h3>hoodie</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="shoes" data-name="Running Shoes" data-price="65">
+            <img src="./images/shoes.jpg" alt="Running Shoes" />
+            <h3>Running Shoes</h3>
+            <p>$65</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="shoes" data-name="Casual Shoes" data-price="65">
+            <img src="./images/Casual Shoes.jpg" alt="Casual Shoes" />
+            <h3>Casual Shoes</h3>
+            <p>$65</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="shoes" data-name="Sneakers" data-price="65">
+            <img src="./images/Sneakers.jpg" alt="Sneakers" />
+            <h3>Sneakers</h3>
+            <p>$65</p>
+            <button>Add To Cart</button>
+          </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about">
+      <h2>About MyStore</h2>
+      <p>
+        MyStore offers quality products at great prices. Our goal is to make
+        online shopping simple and enjoyable.
+      </p>
+      <a href="about.html" class="learn-more-btn">Learn More</a>
+    </section>
+
+    <!-- Footer -->
+     
+    <footer>
+      <h3>MyStore</h3>
+      <p>© 2026 MyStore. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

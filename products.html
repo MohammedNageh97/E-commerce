@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - MyStore</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <h1><img src="./images/Glossy MyStore Shopping Logo.png" alt="logo" /></h1>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="product-page">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="cart.html" id="cart-count" >Cart <span id="cart-number">0</span></a>
+        <button id="theme-toggle">🌙</button>
+      </div>
+    </nav>
+
+    <section class="products-layout">
+      <aside class="sidebar">
+        <h2>Categories</h2>
+        <ul>
+          <li data-category="all">All Products</li>
+          <li data-category="electronics">Electronics</li>
+          <li data-category="clothes">Clothes</li>
+          <li data-category="shoes">Shoes</li>
+          <li data-category="accessories">Accessories</li>
+        </ul>
+
+        <h2>Filter By Price</h2>
+
+        <input type="number" placeholder="Min Price" id="min-price"/>
+        <input type="number" placeholder="Max Price" id="max-price"/>
+
+        <button id="clear-filters">Clear Filters</button>
+      </aside>
+
+      <div class="products-grid">
+        <section class="search-section">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for products..."
+          />
+          <button id="search-btn">Search</button>
+        </section>
+
+        <h2 class="products-title">All Products</h2>
+        <div class="products-list">
+          <div class="product-card" data-category="electronics"  data-name="Headphones" data-price="50">
+            <img src="./images/headphone.avif" alt="Wireless Headphones" />
+            <h3>Headphones</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="electronics" data-name="Laptop MacBook Air" data-price="1446">
+            <img src="./images/MacBook Air 15-inch (M5 Chip).webp" alt="Laptop MacBook Air" />
+            <h3>Laptop MacBook Air</h3>
+            <p>$1446</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="electronics" data-name="iPhone 18 Pro Max" data-price="1500">
+            <img src="./images/iPhone 18 Pro Max.jpg" alt="iPhone 18 Pro Max" />
+            <h3>iPhone 18 Pro Max</h3>
+            <p>$1500</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="electronics" data-name="HP Laptop" data-price="1000">
+            <img src="./images/HP Laptop.jpg" alt="HP Laptop" />
+            <h3>HP Laptop</h3>
+            <p>$1000</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="electronics" data-name="Oraimo Watch 7" data-price="80">
+            <img src="./images/oraimo Watch 7.webp" alt="Oraimo Watch 7" />
+            <h3>Oraimo Watch 7</h3>
+            <p>$80</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="electronics" data-name="MELOGAGA Wireless Gaming Mouse Bluetooth" data-price="25">
+            <img src="./images/MELOGAGA Wireless Gaming Mouse Bluetooth Mouse.jpg" alt="MELOGAGA Wireless Gaming Mouse Bluetooth" />
+            <h3>MELOGAGA Wireless Gaming Mouse Bluetooth</h3>
+            <p>$25</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="electronics" data-name="Dell Latitude 3540 " data-price="820">
+            <img src="./images/Dell Latitude 3540.png" alt="Dell Latitude 3540 " />
+            <h3>Dell Latitude 3540 </h3>
+            <p>$820</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="electronics" data-name="samsung-galaxy-s25-ultra" data-price="1300">
+            <img
+              src="./images/samsung-galaxy-s25-ultra.jpg"
+              alt="samsung-galaxy-s25-ultra"
+            />
+            <h3>samsung-galaxy-s25-ultra</h3>
+            <p>$1300</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="Watch" data-price="50">
+            <img src="./images/watch.jpg" alt="watch" />
+            <h3>Watch</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="Bluetooth-Smart-Sunglasses" data-price="50">
+            <img
+              src="./images/Bluetooth-Smart-Sunglasses.avif"
+              alt="Bluetooth-Smart-Sunglasses"
+            />
+            <h3>Bluetooth-Smart-Sunglasses</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="Breguet" data-price="50">
+            <img src="./images/Breguet.jpg" alt="Breguet" />
+            <h3>Breguet</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="casio" data-price="50">
+            <img src="./images/casio.webp" alt="casio" />
+            <h3>casio</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="Formex Essence 39" data-price="50">
+            <img
+              src="./images/Formex Essence 39.webp"
+              alt="Formex Essence 39"
+            />
+            <h3>Formex Essence 39</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="fossil" data-price="50">
+            <img src="./images/fossil.webp" alt="fossil" />
+            <h3>fossil</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+          
+          <div class="product-card" data-category="accessories" data-name="WATERPROOF LAPTOP BACKPACK SCHOOL BAG" data-price="33">
+            <img src="./images/WATERPROOF LAPTOP BACKPACK SCHOOL BAG.webp" alt="WATERPROOF LAPTOP BACKPACK SCHOOL BAG" />
+            <h3>WATERPROOF LAPTOP BACKPACK SCHOOL BAG</h3>
+            <p>$33</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="accessories" data-name="Jaxen Silver Green" data-price="50">
+            <img
+              src="./images/JaxenSilverGreenGradientRectangleSunglasses.webp"
+              alt="JaxenSilverGreenGradientRectangleSunglasses"
+            />
+            <h3>Jaxen Silver Green</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="clothes" data-name="Grey T-Shirt" data-price="50">
+            <img src="./images/Grey_Tshirt.jpg" alt="Grey_Tshirt" />
+            <h3>Grey T-Shirt</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="clothes" data-name="O'five Collection - Men's Regular T-Shirt" data-price="20">
+            <img src="./images/O'five Collection - Men's Regular T-Shirt.webp" alt="O'five Collection - Men's Regular T-Shirt" />
+            <h3>O'five Collection - Men's Regular T-Shirt</h3>
+            <p>$20</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="clothes" data-name="Dry Men's Running Breathable T-shirt - Red" data-price="25">
+            <img src="./images/Dry Men's Running Breathable T-shirt - Red.avif" alt="Dry Men's Running Breathable T-shirt - Red" />
+            <h3>Dry Men's Running Breathable T-shirt - Red</h3>
+            <p>$25</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="clothes" data-name="Jeans" data-price="50">
+            <img src="./images/jeans.jpg" alt="jeans" />
+            <h3>Jeans</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="clothes" data-name="hoodie" data-price="50">
+            <img src="./images/hoodie.avif" alt="hoodie" />
+            <h3>hoodie</h3>
+            <p>$50</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="shoes" data-name="Running Shoes" data-price="65">
+            <img src="./images/shoes.jpg" alt="Running Shoes" />
+            <h3>Running Shoes</h3>
+            <p>$65</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="shoes" data-name="Casual Shoes" data-price="65">
+            <img src="./images/Casual Shoes.jpg" alt="Casual Shoes" />
+            <h3>Casual Shoes</h3>
+            <p>$65</p>
+            <button>Add To Cart</button>
+          </div>
+
+          <div class="product-card" data-category="shoes" data-name="Sneakers" data-price="65">
+            <img src="./images/Sneakers.jpg" alt="Sneakers" />
+            <h3>Sneakers</h3>
+            <p>$65</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
