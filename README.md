@@ -17,6 +17,11 @@ MyStore is a responsive e-commerce website built using HTML, CSS, and JavaScript
 - CSS3
 - JavaScript
 - LocalStorage
+## Live Demo
+[View MyStore Website](https://mohammednageh97.github.io/E-commerce/)
+
+## GitHub Repository
+[View Source Code](https://github.com/MohammedNageh97/E-commerce)
 
 ## Author
 Mohammed Nageh
